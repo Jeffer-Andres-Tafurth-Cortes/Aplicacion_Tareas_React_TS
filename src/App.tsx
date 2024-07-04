@@ -3,9 +3,14 @@ import { Toaster } from 'react-hot-toast'
 
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1 className="text-5xl font-bold">Todo App Tutorial</h1>
-    </div>
+    <>
+      {/** El componente 'Toaster' sera el letrero a mostrar cuando se cree una nueva tarea dentro de la aplicacion  */}
+      <Toaster position='bottom-center' />
+
+      
+      <AddTodo />
+      <TodoList />
+    </>
   )
 }
 
